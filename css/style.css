@@ -117,21 +117,21 @@ body {
 }
 .link-social-media:hover .item-social-media{
     background-color: #2600ff;
-    color: #fff;
-    border-color: #58af9b;
+    color: #9dff00;
+    border-color: #af0ecf;
 }
 .list-social-media {
     display: flex;
     list-style-type: none;
 }
 .item-social-media {
-    border: 1px solid #bdc3c7;
+    border: 1px solid #70075f;
     border-radius: 50%;
     width: 35px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    color: #95a5a6;
+    color: #ff0000;
 }
 .form {
     display: flex;
@@ -142,7 +142,7 @@ body {
     height: 45px;
     width: 100%;
     border: none;
-    background-color: #ecf0f1;
+    background-color: #000000;
 }
 input:-webkit-autofill 
 {    
@@ -150,13 +150,13 @@ input:-webkit-autofill
     -webkit-text-fill-color: #000 !important;
 }
 .label-input {
-    background-color: #ecf0f1;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     margin: 8px;
 }
 .icon-modify {
-    color: #7f8c8d;
+    color: #8112c2;
     padding: 0 5px;
 }
 
@@ -175,7 +175,7 @@ input:-webkit-autofill
     z-index: -1;
 }
 .password {
-    color: #34495e;
+    color: #350bce;
     font-size: 14px;
     margin: 15px 0;
     text-align: center;
