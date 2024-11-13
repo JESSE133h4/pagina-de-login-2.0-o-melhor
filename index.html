@@ -53,9 +53,11 @@
                     
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" id="registerPassword" placeholder="Password">
+                        <button type="button" onclick="togglePasswordVisibility('registerPassword')">
+                            <i id="eye-icon" class="fas fa-eye"></i>
+                        </button>
                     </label>
-                    
                     
                     <button class="btn btn-second">sign up</button>        
                 </form>
@@ -92,7 +94,10 @@
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" id="loginPassword" placeholder="Password">
+                        <button type="button" onclick="togglePasswordVisibility('loginPassword')">
+                            <i id="eye-icon" class="fas fa-eye"></i>
+                        </button>
                     </label>
                 
                     <a class="password" href="#">forgot your password?</a>
@@ -118,6 +123,20 @@
                 window.location.href = redirectUrl;
             } else {
                 alert('Email não registrado!');
+            }
+        }
+
+        function togglePasswordVisibility(passwordFieldId) {
+            const passwordField = document.getElementById(passwordFieldId);
+            const eyeIcon = passwordField.nextElementSibling.firstElementChild;
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordField.type = 'password';
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
             }
         }
     </script>
