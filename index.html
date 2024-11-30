@@ -10,10 +10,7 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
-   
-    
-    
-    
+
     <div class="container">
         <div class="content first-content">
             <div class="first-column">
@@ -44,6 +41,19 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">use seu e-mail para inscrição::</p>
+                
+                <!-- Texto adicionado -->
+                <div class="welcome-message">
+                    <p>olá, eu sou o Jesse<br>
+                    Sou do Colégio Estadual Leocádia Braga Ramos<br>
+                    Turma: 2C<br
+                    <p> PARA O ACESSO DO PORTIFÓLIO: </p>
+                    PARA SE INSCREVER: google@gmail.com<br>
+                    Senha: 123456</p>
+                  
+                </div>
+                <!-- Fim do texto adicionado -->
+
                 <form class="form" onsubmit="registerUser(event)">
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
@@ -122,7 +132,7 @@
             event.preventDefault();
             const email = document.getElementById('loginEmail').value;
             const registeredEmail = localStorage.getItem('registeredEmail');
-            const redirectUrl = 'https://jesse133h4.github.io/house-of-the-dragon/'; // substitua pelo URL desejado
+            const redirectUrl = 'https://jesse133h4.github.io/House-e-game-of-thrones/'; // substitua pelo URL desejado
             if (email === registeredEmail) {
                 window.location.href = redirectUrl;
             } else {
